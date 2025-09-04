@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --color:#fff;
+    --seccolor:#1f242d;
+    --tcolor:#7cf03d;
+}
+
+body{
+    background-color: var(--seccolor);
+
+}
+
+a{
+    color: var(--color);
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    /* background-color: slateblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul{
+    display: flex ;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover a{
+    color: var(--tcolor);
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a{
+    color: var(--tcolor);
+}
+
+.fa-brands fa-github{
+    color: var(--color);
+    width: 20vw;
+    height: 20vh;
+}
+
+.home-info h1{
+    font-family: sans-serif;
+    font-size: 55px;
+    color: var(--color);
+}
+
+.home-info h2{
+    font-size: 32px;
+    margin-top: 15px;
+    color:var(--color)
+} 
+
+.home-info p{
+    color: var(--color);
+    margin-top: 10px;
+}
+
+.home-info{
+    position: relative;
+    top: 35vh;
+    left: 10vw;
+    max-width: 50vw;
+}
+
+button {
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: var(--tcolor);
+    font-size: 17px;
+    transition: 0.5s;
+    /* color: var(--color); */
+}
+
+button:hover{
+    background-color: var(--seccolor);
+    border: 2px solid var(--tcolor);
+    color: var(--tcolor);
+    cursor: pointer;
+}
+
+.btn-sci{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    /* justify-content: center; */
+}
+
+.sci i{
+    display: flexbox;
+    position: relative;
+    top: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    transition: 0.7s;
+}
+
+.sci a i:hover{
+    color: var(--tcolor);
+}
