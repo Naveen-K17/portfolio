@@ -13,7 +13,6 @@
 
 body{
     background-color: var(--seccolor);
-
 }
 
 a{
@@ -93,19 +92,22 @@ a{
     max-width: 50vw;
 }
 
-button {
+.btn {
+    display: inline-block;
     width: 130px;
     height: 50px;
+    line-height: 50px;
+    text-align: center;
     border-radius: 15px;
     margin-top: 20px;
     margin-left: 10px;
     background-color: var(--tcolor);
     font-size: 17px;
+    color: var(--seccolor);
     transition: 0.5s;
-    /* color: var(--color); */
 }
 
-button:hover{
+.btn:hover {
     background-color: var(--seccolor);
     border: 2px solid var(--tcolor);
     color: var(--tcolor);
@@ -131,4 +133,17 @@ button:hover{
 
 .sci a i:hover{
     color: var(--tcolor);
+}
+
+.image{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 80vw;
+    position: absolute;
+    left: 65vw ;
+}
+
+img{
+    border-radius: 200px;
+    box-shadow: 2px 2px 20px var(--tcolor);
 }
